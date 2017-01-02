@@ -1,0 +1,19 @@
+title: "Kulfon: Fast and simple static site generator written in JavaScript"
+
+meta:
+  description: Kulfon is a « one command », static site generator written entirely in JavaScript. It is fast, modern and simple.
+  facebook:
+    site_name: kulfon.net
+    image:
+      url: https://raw.githubusercontent.com/zaiste/kulfon/master/kulfon-static-site-logo.jpg
+      width: 512
+      height: 512
+      type: img/jpg
+    url: https://kulfon.net
+    locale: en_US
+  twitter:
+    site: kulfon.net
+    creator: Zaiste
+    image:
+      url: https://raw.githubusercontent.com/zaiste/kulfon/master/kulfon-static-site-logo.jpg
+    domain: kulfon.net
