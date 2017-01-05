@@ -17,3 +17,8 @@ meta:
     image:
       url: https://raw.githubusercontent.com/zaiste/kulfon/master/kulfon-static-site-logo.jpg
     domain: kulfon.net
+
+themes:
+  - name: Bare
+    author: Zaiste
+    description: The most basic Kulfon theme

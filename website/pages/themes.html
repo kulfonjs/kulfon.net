@@ -1,0 +1,21 @@
+{% extends "layouts/base.html" %}
+{% block content %}
+<h2 class="f3 fw4 pa3 mv0">Themes</h2>
+<div class="cf pa2">
+  {% for theme in data.themes %}
+  <div class="fl w-100 w-50-m w-33-l pa2">
+    <a href="/themes/{{ theme.name | lower }}/" class="db link dim tc">
+      <img src="http://is4.mzstatic.com/image/thumb/Music62/v4/93/8f/75/938f7536-0188-f9ba-4585-0a77ceaebf0a/source/400x40000bb.png" alt="Frank Ocean Blonde Album Cover" class="w-100 db outline black-10"/>
+      <dl class="mt2 f6 lh-copy">
+        <dt class="clip">Name</dt>
+        <dd class="f4 ml0 black truncate w-100">{{ theme.name }}</dd>
+        <dt class="clip">Author</dt>
+        <dd class="f5 ml0 gray truncate w-100">{{ theme.author }}</dd>
+        <dt class="clip">Description</dt>
+        <dd class="f6 ml0 gray truncate w-100">{{ theme.description }}</dd>
+      </dl>
+    </a>
+  </div>
+  {% endfor %}
+</div>
+{% endblock %}
