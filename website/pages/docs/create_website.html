@@ -1,0 +1,35 @@
+{% extends "layouts/base.html" %}
+
+{% block nav %}
+{% include "partials/nav.html" %}
+{% endblock %}
+
+{% block content %}
+<h1>Create Website</h1>
+
+<p>Once Kulfon is installed, you will have access to the <code>kulfon</code> command. First, let's create a new project:</p>
+<pre class="f6 mt0">
+  <code class="bl b--red bw2 mt0 pa1">
+  kulfon init my-project
+  </code>
+</pre>
+<p>Now enter the directory:</p>
+<pre class="f6 mt0">
+  <code class="bl b--red bw2 mt0 pa1">
+  cd my-project
+  </code>
+</pre>
+<p>and run kulfon's server</p>
+<pre class="f6 mt0">
+  <code class="bl b--red bw2 mt0 pa1">
+  kulfon serve
+  </code>
+</pre>
+<p>Go to http://localhost:3000 to check your website.</p>
+<p>For more commands, just type:</p>
+<pre class="f6 mt0">
+  <code class="bl b--red bw2 mt0 pa1">
+  kulfon
+  </code>
+</pre>
+{% endblock %}

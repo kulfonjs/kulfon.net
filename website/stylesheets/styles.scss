@@ -8,7 +8,7 @@ html, body {
   margin: 0;
   height: 100%;
   min-height: 100%;
-  font-size: 18px;
+  font-size: 16px;
   font-family: 'Lato';
 }
 
@@ -146,4 +146,22 @@ nav {
 
 .light-white {
   color: #EEE;
+}
+
+pre {
+  display: block;
+  margin: 0;
+  width: 100%;
+  code {
+    display: block;
+    color: #fff;
+    background-color: #475359;
+  }
+}
+
+code {
+  background-color: #475359;
+  padding: 0 .5em;
+  color: white;
+  font-size: 14px;
 }

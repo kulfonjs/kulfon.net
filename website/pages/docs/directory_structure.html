@@ -1,0 +1,32 @@
+{% extends "layouts/base.html" %}
+
+{% block nav %}
+{% include "partials/nav.html" %}
+{% endblock %}
+
+{% block content %}
+<h1>Directory Structure</h1>
+
+<p><code>kulfon init</code> creates the following directory structure:</p>
+<pre class="f6 mt0">
+  <code class="bl b--red bw2 mt0 pa1">
+  ├── config.yml
+  ├── public
+  └── website
+      ├── data.yml
+      ├── images
+      │   └── logo.svg
+      ├── javascripts
+      │   └── main.js
+      ├── layouts
+      │   └── base.html
+      ├── pages
+      │   ├── about.md
+      │   └── index.html
+      ├── partials
+      │   └── meta.html
+      └── stylesheets
+          └── styles.scss
+  </code>
+</pre>
+{% endblock %}
