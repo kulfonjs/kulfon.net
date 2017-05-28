@@ -14,8 +14,18 @@
 <body class="w-100 bg-white">
   {% include 'partials/nav.html' %}
 
-  {% block content %}{% endblock %}
-  
+  <main class="section">
+    <div class="container">
+      <div class="columns">
+        <div class="column is-3">
+          {% include "partials/aside.html" %}
+        </div>
+        <div class="column content">
+          {% block content %}{% endblock %}
+        </div>
+      </div>
+    </div>
+  </main>
   <footer class="pv4 ph3 ph5-m ph5-l light-white">
     <small class="f6">© 2017 <a href="https://zaiste.net" class="link light-white fw6"><strong>Zaiste</strong></a></small>
     <div class="mt3">

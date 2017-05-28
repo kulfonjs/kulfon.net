@@ -19,6 +19,12 @@ meta:
     domain: kulfon.net
 
 themes:
-  - name: Bare
+  - name: bare
     author: Zaiste
-    description: The most basic Kulfon theme
+    description: This is the most basic theme that provides a minimal directory structure that can be transformed by Kulfon. There is no styling nor additional scripts.
+  - name: default
+    author: Zaiste
+    description: Default theme comes with a preconfigured CSS framework called Bulma. It provides basic views and components such as navigation, landing and footer.
+  - name: 3column
+    author: Zaiste
+    description: This is a more elaborated page structure with 3 columns.

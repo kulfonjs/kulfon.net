@@ -1,25 +1,27 @@
-{% extends "layouts/base.html" %}
-
-{% block nav %}
-{% include "partials/nav.html" %}
-{% endblock %}
+{% extends "layouts/docs.html" %}
 
 {% block content %}
-<h1>Installation</h1>
 
-<p>Install it globally:</p>
+{% markdown %}
+# Installation
 
-<pre class="f6 mt0">
-  <code class="bl b--red bw2 mt0 pa1">
-  yarn global add install
-  </code>
-</pre>
+## Dependencies
 
-<p>You can also use `npm` if you like:</p>
-<pre class="f6 mt0">
-  <code class="bl b--red bw2">
-  npm install -g kulfon
-  </code>
-</pre>
+Kulfon is a [Node.js](https://nodejs.org/) project. It needs Node.js in version 4.x or higher. Please refer to [this Node.js documentation](https://nodejs.org/en/download/package-manager/) on how to install it on your platform. 
 
+## Install 
+
+Install Kulfon globally using YARN
+
+```
+yarn global add install
+```
+
+You can also use `npm` if you like:
+
+```
+npm install -g kulfon
+```
+
+{% endmarkdown %}
 {% endblock %}

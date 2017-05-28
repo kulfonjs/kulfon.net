@@ -1,17 +1,17 @@
-{% extends "layouts/base.html" %}
-
-{% block nav %}
-{% include "partials/nav.html" %}
-{% endblock %}
+{% extends "layouts/docs.html" %}
 
 {% block content %}
-<h1>Build</h1>
-<p>You can quickly build your website: </p>
-<pre class="f6 mt0">
-  <code class="bl b--red bw2 mt0 pa1">
-  kulfon build
-  </code>
-</pre>
-<p>This will generate <code>public</code> directory which should be copied to your remote server to be handled by
-  a web server such as Apache or Nginx.</p>
+{% markdown %}
+
+# Build
+
+You can quickly build your website: 
+
+```
+kulfon build
+```
+
+This will generate `public` directory which should be copied to your remote server to be handled by a web server such as Apache or Nginx.
+
+{% endmarkdown %}
 {% endblock %}
