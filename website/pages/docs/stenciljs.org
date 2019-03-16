@@ -1,0 +1,7 @@
+* Stencil.js
+
+[[https://stenciljs.com/][Stencil.js]] is a compiler which generates reusable, web components. It is much
+more than just a markup language. It aims to combine the best concepts of the
+most popular frontend frameworks.
+
+/TBA, IN PROGRESS/

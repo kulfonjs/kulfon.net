@@ -1,0 +1,57 @@
+* Routing
+
+Kulfon uses an /implict routing/ approach. This means that the correspondence
+between browser URLs and pages is established based on the page file location
+within the directory structure of ~pages/~, i.e:
+
+- ~/~ corresponds to ~index.njk~
+- ~/about~ corresponds to ~about/index.njk~
+- ~/posts/my-article~ corresponds to ~posts/my-article/index.njk~
+
+with these pages being located relative to ~pages/~ directory.
+
+** Dynamic Routes
+
+There is a special directory name: the underscore ~_~, which creates
+a *dynamic route*. The undercore means that there will be /dynamic params/ in
+that particular place of given route.
+
+The directory structure of ~posts/_/~ designates that in the URL it is possible
+to have any chain of characters after ~/posts/~. In other words, any route
+prefixed with ~/posts/~ is possible, and the rest of it will be considered
+as a /param/.
+
+The ~/posts/my-first-blog-post/~ URL will be generated using a page file at
+~posts/_/index.njk~ located in ~pages/~ directory.
+
+Dynamic routes are useful if you need more than one page; otherwise you can just
+create that page explicitly. Since it is more than one page, we talk
+about /data collections/ in the context of dynamic routes.
+
+** Data Collections
+
+A data collection is a group of data elements that will be used to generate the
+pages. Each such element is an input to a page template defined in
+a /underscore folder/.
+
+From the previous example, the page template located at ~posts/_/index.njk~ will generate
+as many pages as there are elements in the corresponding data collection.
+
+Each element of a data collection is a pair defined as an object, where the key
+is an ~id~ being specified in a route, and the value is the data associated with
+this data element.
+
+Here is an example of a YAML file being used as the data source for this
+particular data collection:
+
+#+BEGIN_SRC yaml
+posts_by_id:
+  my-first-blog:
+    title: This is my first blog post
+    content: >
+      ...
+  my-second-blog:
+    title: This is my second blog post
+    content: >
+      ...
+#+END_SRC

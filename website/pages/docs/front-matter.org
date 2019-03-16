@@ -1,0 +1,34 @@
+* Front Matter
+
+Each page can have a meta section, called *front matter** with additional
+variables which will be merged into the ~data~ object.
+
+This ~data~ object is available in all pages.
+
+Here's an example for a Nunjucks page:
+
+#+BEGIN_SRC twig
+---
+title: This is my title
+---
+{% extends "layouts/index.njk" %}
+{% block content %}
+<h2>My Page: {{ data.title }}
+{% endblock %}
+#+END_SRC
+
+And here's an example for a Markdown page:
+
+#+BEGIN_EXAMPLE
+---
+title: This is my title
+draft: true
+tags:
+- important
+- essay
+---
+
+# This is the first header
+
+Let's write some *important* content
+#+END_EXAMPLE

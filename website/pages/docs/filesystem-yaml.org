@@ -1,0 +1,26 @@
+* Filesystem as YAML
+
+You can specify custom data that can be accessed in your views using data files.
+Those are YAML files which can be either stored in ~website/data/~ directory or
+using a single ~data.yml~ placed directly in website. By default ~website/data.yml~
+is used; if set, ~data/~ directory has higher priority.
+
+Here's an example of a ~data.yml~ file:
+
+#+BEGIN_SRC yaml
+title: This is the title of this website
+
+meta:
+  description: Here goes <meta/> tag description.
+
+posts:
+  - title: My First blog post
+    content: >
+      I'd like to start blogging and this is my first
+      attempt to do so.
+#+END_SRC
+
+The content of this file is automatically injected in all views as ~data~
+object. You can access any part of it using a typical JavaScript notation e.g.
+~data.title~ for the title, or ~data.posts[0].content~ for the content field of
+the first post.

@@ -1,0 +1,48 @@
+
+* Components
+
+Components are fragments of the screen. They can be separated into two, major
+groups: *Layouts* & *Partials*.
+
+** Layouts
+
+*Layotus* are components with "holes", i.e. places within the file where
+   other components need to be inserted to have a fully functional page
+
+   #+BEGIN_SRC html
+<body>
+  {% include 'nav.njk' %}
+
+  <div class="container">
+    {% include "aside.njk" %}
+
+    <main class="content">
+      {% block content %}
+        {{ content | safe }}
+      {% endblock %}
+    </main>
+  </div>
+</body>
+   #+END_SRC
+
+Here, the ~{% block content %} ... {% endblock %}~ section is a place which
+will be filled by the content coming from other components using this
+component as their layout.
+
+** Partials
+
+*Partials* are independant components. They don't need other components as
+input, but they can group other partial components by inserting them into their
+body.
+
+#+BEGIN_SRC html
+<header>
+  <div class="header-container">
+    <img src="path/to/logo"/>
+
+    <nav>
+      {% include "navigation.njk" %}
+    </nav>
+  </div>
+</header>
+#+END_SRC

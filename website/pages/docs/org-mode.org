@@ -1,0 +1,15 @@
+#+TITLE: org-mode
+
+* Org Mode
+
+[[https://orgmode.org/][Org Mode]] is an information management and outlining tool for [[https://www.gnu.org/software/emacs/][Emacs]]. It comes
+with a lightweight, but powerful markup language. The markup provides plain text
+formatting. It is similar to [[https://en.wikipedia.org/wiki/Markdown][Markdown]].
+
+Kulfon supports Org Mode out of the box. Any ~.org~ file from ~pages/~ directory
+will be automatically converted to a corresponding HTML file.
+
+Here's a snippet of Org Mode in action:
+
+#+BEGIN_SRC js
+#+END_SRC

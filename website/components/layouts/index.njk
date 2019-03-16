@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  {% include "partials/meta.html" %}
+  {% include "meta.njk" %}
 
   <title>{% block title %}{{ data.title }}{% endblock %}</title>
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
@@ -11,21 +11,23 @@
   <link href="/styles.css" rel="stylesheet">
   {% block head %}{% endblock %}
 </head>
-<body class="w-100 bg-white">
-  {% include 'partials/nav.html' %}
+<body>
+  {% include 'nav.njk' %}
 
-  <main class="section">
+  <section class="hero">
     <div class="container">
-      <div class="columns">
-        <div class="column is-3">
-          {% include "partials/aside.html" %}
-        </div>
-        <div class="column content">
-          {% block content %}{% endblock %}
-        </div>
+      <div class="hero-content">
+        <h1>Kulfon</h1>
+        <p>Generate Websites from Data, Instantly.</p>
+        <a href="/docs/install/" class="red button">Get Started</a>
       </div>
     </div>
-  </main>
+  </section>
+
+  <div class="wrapper">
+    {% block content %}{% endblock %}
+  </div>
+  
   <footer class="pv4 ph3 ph5-m ph5-l light-white">
     <small class="f6">© 2017 <a href="https://zaiste.net" class="link light-white fw6"><strong>Zaiste</strong></a></small>
     <div class="mt3">

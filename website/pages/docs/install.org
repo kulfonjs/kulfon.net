@@ -1,0 +1,81 @@
+* Installation
+
+** Dependencies
+
+Kulfon is a [[https://nodejs.org/][Node.js]] project. It requires *Node.js 8.x* or higher. Please
+refer to [[https://nodejs.org/en/download/package-manager/][this Node.js documentation]] on how to install it on your platform.
+
+Run the following command to check your Node.js version:
+
+#+BEGIN_SRC bash
+node -v
+#+END_SRC
+
+** Install
+
+Install ~kulfon~ globally
+
+#+BEGIN_SRC bash
+npm install -g kulfon
+#+END_SRC
+
+* To Remove
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed congue laoreet
+lorem vitae consequat. Ut euismod et arcu nec dapibus. In ac elementum urna.
+Aliquam erat volutpat. Sed congue odio et ipsum iaculis consectetur. Praesent
+commodo bibendum ullamcorper. Praesent nec posuere nunc.
+
+Mauris semper quam a erat tincidunt maximus. Vestibulum ante ipsum primis in
+faucibus orci luctus et ultrices posuere cubilia Curae; Nullam sem lectus,
+rutrum sed elit id, tincidunt tempor purus. Nullam et dolor ante. Etiam non arcu
+lobortis mauris luctus blandit non sed magna. Vestibulum in purus vulputate,
+laoreet velit in, efficitur erat. Integer vitae egestas eros. Suspendisse vitae
+dignissim ante.
+
+Donec consectetur gravida semper. Class aptent taciti sociosqu ad litora
+torquent per conubia nostra, per inceptos himenaeos. Pellentesque sit amet orci
+posuere, vulputate leo eu, varius leo. Duis rhoncus eu ligula et maximus.
+Quisque rutrum, risus vel porttitor commodo, ipsum mi venenatis arcu, sit amet
+sollicitudin lorem elit sit amet felis. Vestibulum rutrum consectetur nisl, non
+lobortis massa ultrices id. Ut ut mauris nunc. Integer lectus sapien, lacinia
+eget libero id, ultricies scelerisque massa. Pellentesque habitant morbi
+tristique senectus et netus et malesuada fames ac turpis egestas. Praesent
+euismod magna lorem. Ut ultricies lectus in diam consectetur, ut hendrerit ex
+laoreet. Morbi efficitur pellentesque nibh vel imperdiet. Aenean vestibulum
+porta urna ut rutrum. Class aptent taciti sociosqu ad litora torquent per
+conubia nostra, per inceptos himenaeos. Donec sapien mauris, dictum sed felis
+sit amet, malesuada iaculis ante.
+
+Vestibulum eu eros a arcu dictum consequat. Vivamus non nunc lacus. Pellentesque
+a orci imperdiet odio interdum consectetur eu eget erat. Ut aliquam gravida
+pellentesque. Donec porttitor elit metus, quis dictum erat sagittis ut. Nullam
+ac dui mattis, lobortis lorem vestibulum, molestie ante. Sed semper massa dolor,
+et pellentesque tortor tristique et. Donec vitae luctus massa, in posuere odio.
+
+Sed commodo tortor sit amet est auctor consequat. Vivamus vel mattis eros. Sed
+placerat dui fermentum, varius sem quis, maximus est. Fusce convallis vehicula
+urna vitae condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et
+ultrices posuere cubilia Curae; Integer consequat nulla non arcu placerat, sed
+suscipit velit maximus. Nulla leo elit, posuere nec pretium eu, fringilla id
+urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere
+cubilia Curae; Nullam id dapibus nulla. Integer rhoncus, nibh quis maximus
+hendrerit, nisl tellus scelerisque est, malesuada vestibulum ex lectus sit amet
+risus. Sed consequat purus sed sapien varius, et semper dolor semper. Nam at
+finibus dui.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
+turpis egestas. Donec non odio nisl. Donec et arcu quam. Pellentesque placerat
+magna felis, ac hendrerit metus feugiat ut. Nam quis egestas erat, id pretium
+dolor. Nullam nulla tellus, lacinia vitae ipsum suscipit, molestie egestas
+turpis. Nulla facilisi. Integer sed est risus. Aliquam posuere felis at augue
+tincidunt, quis viverra augue rhoncus. Suspendisse malesuada blandit eros quis
+lacinia.
+
+Suspendisse et ullamcorper nisl. Pellentesque justo neque, aliquam nec lorem in,
+maximus sodales libero. Aenean metus ex, ultrices non aliquet sed, condimentum
+et dolor. Aliquam venenatis, libero at euismod dictum, lorem ligula sodales leo,
+eu luctus nisl turpis vitae nibh. In placerat sagittis convallis. Duis a aliquet
+leo. In a urna id nibh euismod varius id a nunc. Nam sodales a tellus ac
+viverra. Curabitur metus est, malesuada nec sapien eu, convallis egestas mi.
+Integer quis velit vehicula, consequat urna id, eleifend eros. Donec convallis
+leo aliquam, rutrum nisl lobortis, tempus velit.

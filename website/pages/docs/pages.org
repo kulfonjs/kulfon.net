@@ -1,0 +1,27 @@
+* Pages
+
+*Pages* group view components together. They represent a final assemblage of those components,
+which means that they need to specify a layout and corresponding components (e.g. a sidebar, a navigation bar, etc).
+
+*Pages* are stored in a special directory called ~pages/~.
+
+** URLs
+
+The URL for a *Page* is constructed based on the location of the page file within the directory hierarchy of
+the filesystem relative to ~pages/~ directory; e.g.
+
+- ~/~ corresponds to ~index.njk~
+- ~/about~ corresponds to ~about/index.njk~
+- ~/posts/my-article~ corresponds to ~posts/my-article/index.njk~
+
+For convenience and if you mainly use static pages (in contrast to dynamic pages), you can shorten the file paths in the following way:
+
+- ~my-article/index.njk~ can be shorten to ~my-article.njk~
+
+~*.njk~ is an extension for Nunjucks templating engine.
+
+** Static Pages vs Dynamic Pages
+
+A static page is a 1-to-1 relation between files on the filesystem and generated pages.
+A dynamic page is a single page (a template) which used to generate more than
+one page on the website.

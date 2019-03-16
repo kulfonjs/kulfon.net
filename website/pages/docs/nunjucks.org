@@ -1,0 +1,85 @@
+* Nunjucks
+
+[[https://mozilla.github.io/nunjucks/][Nunjucks]] is a templating engine for JavaScript inspired by [[http://jinja.pocoo.org/docs/2.10/][jinja2]]. It provides
+block inheritance, autoescaping, macros, asynchronous control, and more. Its
+runtime has less than 8K gzipped. It is available both in Node.js and in browsers.
+
+Here's a snippet of Nunjucks:
+
+#+BEGIN_SRC twig
+{% extends "base.html" %}
+
+{% block header %}
+<h1>{{ title }}</h1>
+{% endblock %}
+
+{% block content %}
+<ul>
+  {% for name, item in items %}
+  <li>{{ name }}: {{ item }}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
+#+END_SRC
+
+In Kulfon, Nunjucks templates use ~.njk~ file extension. You can also use
+~.html~ if that's more convenient in your context.
+
+** Blocks
+
+Blocks are used in layout components to specify the places where the page
+content will be placed.
+
+By convention there is at least one block called ~content~ which designates the
+main content for the final page. The markup placed within the block section in a
+layout component is the default value for that section.
+
+In the following example if a page inheriting from this layout doesn't specify
+the content, the default ~h1~ tag will be used instead.
+
+#+BEGIN_SRC twig
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Default Title</h1>
+{% endblock %}
+#+END_SRC
+
+** Non-Nunjucks Pages: Org Mode & Markdown
+
+Each page, which extends a Nunjucks layout component, must explicitly specify
+a block section by using ~{% block <name> %} ... {% endblock %}~ somewhere in
+its body.
+
+There is, however, a convention in Kulfon that simplifies the creation of pages
+using either [[https://orgmode.org/][Org Mode]] or [[https://en.wikipedia.org/wiki/Markdown][Markdown]] formats. Those pages don't need to specify the
+blocks explicitly. Instead, their content is stored in a ~content~ variable.
+This way, if you specify this variable as a default content for a main block, a
+corresponding layout component will be used for these pages.
+
+Here's a layout that will display the content of each Org Mode or Markdown page
+with an added sidebar component.
+
+#+BEGIN_SRC twig
+<html>
+<head>
+  ...
+</head>
+<body>
+  {% include "sidebar.njk" %}
+
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+</body>
+</html>
+#+END_SRC
+
+By default, a layout named ~index.njk~ from ~components/layouts/~ directory will
+be used.
+
+It is also possible to leverage an implicit layout inheritance which follows the
+directory structure in ~pages/~. Each page located in ~<your-name>~ directory
+inside ~pages/~ will first extends ~<your-name>.njk~ layout from
+~components/layouts~, and if it doesn't exist, it will default to ~index.njk~
+from ~components/layouts~.

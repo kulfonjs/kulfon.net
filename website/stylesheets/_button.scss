@@ -1,0 +1,54 @@
+.button {
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+  padding: .8em 1.4em;
+  padding-right: 4.7em;
+  border: none;
+  color: white;
+  transition: .2s;
+  border-radius: 4px;
+  &:before, &:before {
+    background: fadeout(#000, 90%);
+  }
+  &:hover {
+    background: darken(#444, 10%);
+  }
+  &:active, &:focus {
+    background: darken(#444, 30%);
+    outline: none;
+  }
+}
+
+.button {
+  margin-top: 1em;
+  min-width: 10em;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.red {
+  background: #FE5F55;
+  &:hover {
+    background: darken(#FE5F55, 10%);
+  }
+  &:active,
+  &:focus {
+    background: darken(#FE5F55, 30%);
+  }
+  &:hover:after {
+    -webkit-animation: bounceright .3s alternate ease infinite;
+    animation: bounceright .3s alternate ease infinite;
+  }
+}
+
+@-webkit-keyframes bounceright {
+  from { -webkit-transform: translateX(0); }
+  to   { -webkit-transform: translateX(3px); }
+}
+
+@keyframes bounceright {
+  from { transform: translateX(0); }
+  to   { transform: translateX(3px); }
+}
+
