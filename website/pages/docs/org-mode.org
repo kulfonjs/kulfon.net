@@ -1,5 +1,7 @@
-#+TITLE: org-mode
-
+---
+title: Org Mode in Kulfon
+description: Org Mode in Kulfon, a Static Site Generator for The Rest of Us
+---
 * Org Mode
 
 [[https://orgmode.org/][Org Mode]] is an information management and outlining tool for [[https://www.gnu.org/software/emacs/][Emacs]]. It comes

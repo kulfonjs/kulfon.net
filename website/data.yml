@@ -1,9 +1,15 @@
-title: "Kulfon: Fast and simple static site generator written in JavaScript"
+title: "Kulfon · Static Site Generator for The Rest of Us"
+name: kulfon.org
+author: Zaiste
+url: https://kulfon.org
 
 meta:
-  description: Kulfon isa « one command », static site generator written entirely in JavaScript. It is fast, modern and simple.
+  description: >
+    Kulfon is a website generator that combines data sources with templates to tranform them
+    into HTML pages at once.
+
   facebook:
-    site_name: kulfon.net
+    site_name: kulfon.org
     image:
       url: https://raw.githubusercontent.com/zaiste/kulfon/master/kulfon-static-site-logo.jpg
       width: 512
@@ -28,3 +34,23 @@ themes:
   - name: 3column
     author: Zaiste
     description: This is a more elaborated page structure with 3 columns.
+
+
+features:
+  - header: Instant Compilation
+    content: Kulfon is designed to perform fast. It can rapidly compile large amounts of files into ready to serve and deploy websites.
+  - header: 100% JavaScript
+    content: Kulfon is a fully JavaScript solution. No need to deal with another programming langauge. JavaScript is efficient enough. This way it's simpler, faster and more convenient to create static website.
+  - header: Static or Static-Interactive?
+    content: Kulfon can generate fully static websites that are rendered server-side only; or static-interactive ones, that once servered over the wire, hydrate into a SPA.
+
+markups:
+  - name: Nunjucks
+    url: https://mozilla.github.io/nunjucks/
+    image: nunjucks.jpg
+  - name: Org Mode
+    url: https://orgmode.org/
+    image: org-mode.svg
+  - name: Markdown
+    url: https://en.wikipedia.org/wiki/Markdown
+    image: markdown-mark-solid.svg

@@ -2,43 +2,36 @@
 {% block content %}
   <div class="container">
     <p class="leading">
-      Kulfon /kuːl fəʊn/ is a <strong>website generator</strong> that combines <strong>data sources</strong>
+      Kulfon /kuːl fəʊn/ is a <strong>static site generator</strong> for the rest of us. It combines <strong>data sources</strong>
       with <strong>templates</strong> to tranform them into <strong>HTML pages</strong> at once.
     </p>
   </div>
 
-<section class="features">
-  <div class="container">
-    <div class="content">
-      <div class="feature">
-        <h3>Header 1</h3>
-        <p>Content 1</p>
-      </div>
-      <div class="feature">
-        <h3>Header 2</h3>
-        <p>Content 2</p>
-      </div>
-      <div class="feature">
-        <h3>Header 3</h3>
-        <p>Content 3</p>
-      </div>
-      <div class="feature">
-        <h3>Header 4</h3>
-        <p>Content 4</p>
+  <section class="features">
+    <div class="container">
+      <div class="content">
+
+        {% for feature in website.features %}
+          <div class="feature">
+            <h3>{{ feature.header }}</h3>
+            <p>{{ feature.content }}</p>
+          </div>
+        {% endfor %}
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="markups">
-  <div class="container">
-    <h2>Supported Markups</h2>
+  <section class="markups">
+    <div class="container">
+      <h2>Supported Markups</h2>
 
-    <div>
-      <img src="/images/markdown-mark-solid.svg" width="100" alt="" />
-      <img src="/images/org-mode.svg" width="100" alt="" />
+      <div class="content">
+        {% for markup in website.markups %}
+        <a href="{{ markup.url }}" class="markup" target="_blank">
+          <div><img src="/images/{{ markup.image }}" width="100" alt="{{ markup.name }} is supported by Kulfon" /></div>
+        </a>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
-
+  </section>
 {% endblock %}

@@ -1,3 +1,7 @@
+---
+title: Stencil.js in Kulfon
+description: Stencil.js in Kulfon, a Static Site Generator for The Rest of Us
+---
 * Stencil.js
 
 [[https://stenciljs.com/][Stencil.js]] is a compiler which generates reusable, web components. It is much

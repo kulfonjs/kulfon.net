@@ -3,7 +3,7 @@
 <head>
   {% include "meta.njk" %}
 
-  <title>{% block title %}{{ data.title }}{% endblock %}</title>
+  <title>{% block title %}{{ page.title or website.title }}{% endblock %}</title>
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
   {% for stylesheet in stylesheets %}
   <link rel="stylesheet" href="{{ stylesheet }}"/>

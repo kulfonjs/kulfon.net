@@ -3,12 +3,12 @@
 <head>
   {% include "meta.njk" %}
 
-  <title>{% block title %}{{ data.title }}{% endblock %}</title>
+  <title>{% block title %}{{ page.title or website.title }}{% endblock %}</title>
   <link rel="shortcut icon" type="image/x-icon" href="/static/favicon.ico">
   {% for stylesheet in stylesheets %}
   <link rel="stylesheet" href="{{ stylesheet }}"/>
   {% endfor %}
-  <link href="/styles.css" rel="stylesheet">
+  <link href="/{{ bundles.css }}" rel="stylesheet">
   {% block head %}{% endblock %}
 </head>
 <body>
@@ -21,18 +21,22 @@
         <p>Generate Websites from Data, Instantly.</p>
         <a href="/docs/install/" class="red button">Get Started</a>
       </div>
+
     </div>
   </section>
 
   <div class="wrapper">
     {% block content %}{% endblock %}
   </div>
-  
-  <footer class="pv4 ph3 ph5-m ph5-l light-white">
-    <small class="f6">© 2017 <a href="https://zaiste.net" class="link light-white fw6"><strong>Zaiste</strong></a></small>
-    <div class="mt3">
-      <a href="https://twitter.com/kulfonjs" title="Language" class="f6 dib pr2 link light-white dim">@kulfonjs</a>
-      <a href="https://github.com/zaiste/kulfon" title="Language" class="f6 dib pr2 link light-white dim">GitHub</a>
+
+  <footer>
+    <div class="footer-container">
+      <div>
+        <span>Made on the Internet by</span>
+        <a href="https://zaiste.net" class="link light-white fw6"><strong>Zaiste</strong></a>
+        &amp;
+        <a href="https://github.com/kulfonjs/kulfon/graphs/contributors">Contributors</a>
+      </div>
     </div>
   </footer>
   {% for javascript in javascripts %}

@@ -1,0 +1,23 @@
+---
+title: Why Kulfon in Kulfon
+description: Why Kulfon in Kulfon, a Static Site Generator for The Rest of Us
+---
+
+* Why Kulfon?
+
+There is a ton of static site generators out there. Here are few points to
+convince you to try Kulfon.
+
++ one-command tool, similar to [[https://gohugo.io/][Hugo]], but written in JavaScript, so it's easier
+  to integrate additional JavaScript libraries or stylesheets
++ solid foundation with carefully selected tools to produce smaller websites faster as [[https://www.wired.com/2016/04/average-webpage-now-size-original-doom/][The Average Webpage Is Now the Size of the Original Doom]]
++ [[https://rollupjs.org/guide/en][Rollup]] for bundling javascripts
++ [[https://sass-lang.com/][Sass]] for stylesheets
++ [[https://mozilla.github.io/nunjucks/][Nunjucks]] for views (a simple, designer friendly HTML-based syntax)
++ [[https://github.com/lovell/sharp][Sharp]] for high performance Node.js image processing
++ written in ES6/ES2015
++ [[https://orgmode.org/][Org Mode]] support
++ [[https://en.wikipedia.org/wiki/Markdown][Markdown]] support
++ unified approach to external dependencies management with unpkg
++ [[https://en.wikipedia.org/wiki/HTTP/2][HTTP/2]] ready
++ Vue.js support (in progress)

@@ -3,7 +3,7 @@
 }
 
 :root {
-  --header-height: 65.1157px;
+  --header-height: 54px;
   --main-color: #ff4136;
   --space: 1em;
 }
@@ -19,13 +19,12 @@ a {
 }
 
 
-p {
+p, .content ul {
   a {
     text-decoration: none;
     background-color: #ffDFDF;
     border-bottom: 1px solid rgba(0,0,0,0.2);
     color: #1a1a1a;
-    padding: 0 .25em;
 
     &:hover {
       border-bottom-color: #1a1a1a;
@@ -67,6 +66,10 @@ header {
   line-height: 1;
 
   nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
     a {
       text-transform: uppercase;
       margin-right: .5em;
@@ -75,6 +78,8 @@ header {
 
       &.active {
         color: var(--main-color);
+        border-bottom: 4px solid var(--main-color);
+        padding-bottom: .85em;
       }
     }
   }
@@ -87,9 +92,10 @@ header {
     padding: 1em 0;
 
     .brand {
-      width: 15em;
-      font-weight: bold;
+      flex: 0 0 15em;
+      font-weight: 900;
       color: var(--main-color);
+      letter-spacing: 1px;
     }
   }
 
@@ -108,14 +114,15 @@ footer {
 }
 
 .wrapper {
-  height: 100vh;
   display: block;
+  flex: 1;
 }
 
 main.content {
   flex: 1;
   padding-left: 1em;
   overflow-y: scroll;
+  margin-bottom: 10em;
 }
 
 .sidebar {
@@ -141,6 +148,19 @@ main.content {
     margin: 0;
     margin-bottom: 1em;
     color: #787878;
+
+    a {
+
+      &:hover {
+        color: var(--main-color);
+      }
+
+      &.active {
+        font-weight: bold;
+        border-left: .25em solid var(--main-color);
+        padding-left: .5em;
+      }
+    }
   }
 }
 
@@ -326,6 +346,28 @@ section {
   h2 {
     margin: 0;
     margin-bottom: .5em;
+  }
+}
+
+.markups {
+
+  .content {
+    display: inline-grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    grid-gap: var(--space);
+    width: 100%;
+
+    .markup {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &:hover {
+        background-color: #EEE;
+        outline: 1px solid #DDD;
+      }
+    }
   }
 }
 

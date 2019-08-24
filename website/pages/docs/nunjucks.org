@@ -1,3 +1,7 @@
+---
+title: Nunjucks in Kulfon
+description: Nunjucks in Kulfon, a Static Site Generator for The Rest of Us
+---
 * Nunjucks
 
 [[https://mozilla.github.io/nunjucks/][Nunjucks]] is a templating engine for JavaScript inspired by [[http://jinja.pocoo.org/docs/2.10/][jinja2]]. It provides
@@ -44,6 +48,15 @@ the content, the default ~h1~ tag will be used instead.
 <h1>Default Title</h1>
 {% endblock %}
 #+END_SRC
+** Helpers
+
+*** Link Helper
+There is the ~{% link %}~ helper available in Nunjucks templates to constract
+links i.e. ~<a href="#"> ... </a>~. It automatically sets links ~class~
+attribute to ~active~ for active links, which are the links that match the
+currently displayed pages. This is useful for building navigation bars where
+there is a visual clue, such as bottom border, to distinguish the currently
+selected navigation item.
 
 ** Non-Nunjucks Pages: Org Mode & Markdown
 

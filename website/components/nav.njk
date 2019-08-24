@@ -2,9 +2,12 @@
   <div class="header-container">
     <a href="/" class="brand">Kulfon</a>
     <nav>
-      <a href="/docs/install" class="active">Docs</a>
-      <a href="/tutorial">Tutorial</a>
-      <a href="#">Features</a>
+      <div class="left">
+        {% link '/docs/install/', 'Docs', __exact=false %}
+      </div>
+      <div class="right">
+        <a href="https://github.com/kulfonjs/kulfon">GitHub</a>
+      </div>
     </nav>
   </div>
 </header>

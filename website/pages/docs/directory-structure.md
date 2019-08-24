@@ -1,3 +1,7 @@
+---
+title: Directory Structure in Kulfon
+description: Directory Structure in Kulfon, a Static Site Generator for The Rest of Us
+---
 # Directory Structure
 
 `kulfon new <project-name>` creates the following directory structure:

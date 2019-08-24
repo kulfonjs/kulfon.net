@@ -1,3 +1,7 @@
+---
+title: Pages in Kulfon
+description: Pages in Kulfon, a Static Site Generator for The Rest of Us
+---
 * Pages
 
 *Pages* group view components together. They represent a final assemblage of those components,

@@ -1,6 +1,10 @@
+---
+title: Front Matter in Kulfon
+description: Front Matter in Kulfon, a Static Site Generator for The Rest of Us
+---
 * Front Matter
 
-Each page can have a meta section, called *front matter** with additional
+Each page can have a meta section, called *front matter* with additional
 variables which will be merged into the ~data~ object.
 
 This ~data~ object is available in all pages.
